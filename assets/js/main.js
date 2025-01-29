@@ -398,4 +398,19 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+
+		function filterCategory(category) {
+		    // 获取所有的工作项目
+		    const items = document.querySelectorAll('.work-item');
+		    items.forEach(item => {
+		        // 判断每个项目的类别是否与选中的类别匹配
+		        if (item.classList.contains(category)) {
+		            item.style.display = 'block';
+		        } else {
+		            item.style.display = 'none';
+		        }
+		    });
+		}
+
+
 })(jQuery);
