@@ -6,7 +6,6 @@ body {
     padding: 20px;
 }
 
-/* 时间线样式 */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -47,7 +46,6 @@ body {
     transform: translateX(-50%);
 }
 
-/* 技能部分 */
 .skills {
     text-align: center;
     margin-top: 50px;
