@@ -1660,23 +1660,3 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-
-
-
-.content {
-    display: flex;
-    justify-content: center;  /* 水平居中 */
-    align-items: center;      /* 垂直居中 */
-    height: 100vh;            /* 让整个页面充满屏幕 */
-    text-align: center;       /* 让文字居中 */
-    padding: 20px;            /* 增加一点边距，避免内容贴边 */
-}
-
-.inner {
-    max-width: 600px;         /* 控制内容的宽度，避免太长 */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* 轻微透明背景，可去掉 */
-    border-radius: 10px;      /* 圆角，使内容块更柔和 */
-}
-
-
