@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="style.css">
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -42,19 +44,52 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>🔍 Aspiring Data Analyst passionate about unlocking new perspectives with data analysis.
-									<br>👩‍💻 Technical Skills:
-									<br>Programming Languages: Python, SQL, R, Java, HTML/CSS/JS/PHP
-									<br> * Data Tools: Databricks, PySpark, Microsoft Azure, Google Vertex AI, BigQuery, Firestore, Excel
-									<br> * Visualization Tools: Looker Studio, Adobe InDesign/Illustrator/Premiere
-									<br> * Others: Google Analytics, Machine Learning
-									<br> Feel free to connect with me or explore my repositories to see my work!</a>.
-								</p>
-							</article>
+						<!-- About Section -->
+						    <article id="about">
+						        <h2 class="major">About</h2>
+						        
+						        <!-- Experience Timeline -->
+						        <h3>📌 Experience</h3>
+						        <div class="timeline">
+						            <div class="timeline-item" data-aos="fade-right">
+						                <div class="timeline-content professional">
+						                    <h4>Business Development Bank of Canada</h4>
+						                    <p>Marketing Analytics Consultant (2023-2024)</p>
+						                </div>
+						            </div>
+						            <div class="timeline-dot"></div>
+						
+						            <div class="timeline-item" data-aos="fade-left">
+						                <div class="timeline-content professional">
+						                    <h4>Conflict Analytics Lab</h4>
+						                    <p>Data Analytics Consultant (2024)</p>
+						                </div>
+						            </div>
+						            <div class="timeline-dot"></div>
+						
+						            <div class="timeline-item" data-aos="fade-right">
+						                <div class="timeline-content part-time">
+						                    <h4>StudioQ, Queen’s University</h4>
+						                    <p>Publications Manager (2022-2023)</p>
+						                </div>
+						            </div>
+						        </div>
+						
+						        <!-- Skills Section -->
+						        <h3>💡 Skills</h3>
+						        <div class="skills">
+						            <div class="skill-category technical" onclick="toggleSkills('tech')">Technical Skills</div>
+						            <div class="skill-category other" onclick="toggleSkills('other')">Other Interests</div>
+						
+						            <div id="tech" class="skill-list">
+						                <p>Python, SQL, R, Java, HTML/CSS/JS/PHP, Databricks, PySpark, Azure, Google Vertex AI</p>
+						            </div>
+						            <div id="other" class="skill-list">
+						                <p>Filming, Traveling, Muay Thai, Baking</p>
+						            </div>
+						        </div>
+						    </article>
+						
 
 						<!-- Work -->
 							<article id="work">
@@ -338,6 +373,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   			<script src="script.js"></script>
 
 	</body>
 </html>
