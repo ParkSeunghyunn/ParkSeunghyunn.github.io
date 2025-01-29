@@ -1660,3 +1660,82 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+
+
+
+
+
+
+/* Work Section */
+#work {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item {
+    width: 45%;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.work-item p {
+    margin: 10px 0;
+}
+
+.more-projects {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-projects a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.more-projects a:hover {
+    background-color: #0056b3;
+}
