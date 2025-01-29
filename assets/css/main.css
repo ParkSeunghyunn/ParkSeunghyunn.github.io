@@ -1665,87 +1665,80 @@ input, select, textarea {
 
 
 
-/* ==========================
-   Timeline 样式 (时间线展示)
-   ========================== */
+/* Timeline Styles */
 .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 40px auto;
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
 }
 
 .timeline-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.timeline-content {
-    background: var(--background-color, white);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    align-self: flex-start;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    align-self: flex-end;
-}
-
-.timeline-content:hover {
-    transform: scale(1.05);
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .timeline-dot {
-    width: 15px;
-    height: 15px;
-    background: var(--primary-color, #6a0dad);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 10px;
 }
 
-/* ==========================
-   Skills Section 样式 (技能展示)
-   ========================== */
+.timeline-content {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+.timeline-item.professional .timeline-content {
+  border-left: 4px solid #007bff;
+}
+
+.timeline-item.part-time .timeline-content {
+  border-left: 4px solid #28a745;
+}
+
+/* Skills Styles */
 .skills {
-    text-align: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-category {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-align: center;
 }
 
-.technical {
-    background: var(--primary-color, #6a0dad);
-    color: white;
+.skill-category.technical {
+  background: #007bff;
+  color: #ffffff;
 }
 
-.other {
-    background: var(--secondary-color, #ff69b4);
-    color: white;
+.skill-category.other {
+  background: #28a745;
+  color: #ffffff;
 }
 
 .skill-list {
-    display: none;
-    margin-top: 10px;
+  display: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
-.skill-list.active {
-    display: block;
+.skill-list p {
+  margin: 0;
+}
+
+/* Hover Effects */
+.skill-category:hover {
+  opacity: 0.8;
 }
