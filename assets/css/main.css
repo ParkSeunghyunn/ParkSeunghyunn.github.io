@@ -1268,7 +1268,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 1.5rem;
+			margin-top: 3.5rem;
 		}
 
 		#header > *:before {
@@ -1319,7 +1319,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 1rem 0rem;
 				max-height: 40rem;
 				overflow: visible;
 			}
