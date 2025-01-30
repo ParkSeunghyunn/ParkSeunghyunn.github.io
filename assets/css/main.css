@@ -1307,7 +1307,7 @@ input, select, textarea {
 			border-color: #ffffff;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
-			max-width: 100%;
+			max-width: 150%;
 		}
 
 			#header .content .inner {
@@ -1321,7 +1321,7 @@ input, select, textarea {
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
 				max-height: 40rem;
-				overflow: hidden;
+				overflow: visible;
 			}
 
 				#header .content .inner > :last-child {
