@@ -1666,14 +1666,14 @@ input, select, textarea {
 
 
 
-/* Centering and Right-aligning Main Page Text */
+/* Centering and Aligning Main Page Text to the Left */
 .content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    text-align: right;
+    text-align: left;
     height: 100vh;
-    padding-right: 10%;
+    padding-left: 10%;
 }
 .inner {
     max-width: 600px;
@@ -1723,28 +1723,52 @@ input, select, textarea {
     cursor: pointer;
 }
 
-/* About Section Improvements */
-.about-container {
+/* About Section - Timeline & Skills */
+.timeline {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding: 50px 10%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 20px;
 }
-.about-text {
-    width: 50%;
-    line-height: 1.6;
+.timeline-item {
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-left: 3px solid #6c5ce7;
 }
-.skills-list {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    background: #6c5ce7;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 15px;
 }
-.skill-item {
+
+/* Skills Section */
+.skills {
+    margin-top: 20px;
+}
+.skill-category {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
     background: #6c5ce7;
     color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
 }
+.skill-list {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #6c5ce7;
+    margin-left: 10px;
+}
+.skill-list p {
+    margin: 5px 0;
+}
+
