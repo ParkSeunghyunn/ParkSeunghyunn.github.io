@@ -412,5 +412,47 @@
 		    });
 		}
 
+	// Typing Effect for 'This is Alisa Liu'
+const text = "This is Alisa Liu";
+let index = 0;
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-effect").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+    }
+}
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("typing-effect").textContent = "";
+    typeEffect();
+});
+
+// Project Filtering
+const filterButtons = document.querySelectorAll(".filter-btn");
+const workItems = document.querySelectorAll(".work-item");
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.getAttribute("data-category");
+        workItems.forEach(item => {
+            if (category === "all" || item.getAttribute("data-category") === category) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+});
+
+// Modal Functionality
+function openProjectModal(title, description) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-description").textContent = description;
+    document.getElementById("project-modal").style.display = "flex";
+}
+function closeProjectModal() {
+    document.getElementById("project-modal").style.display = "none";
+}
+document.querySelector(".close").addEventListener("click", closeProjectModal);
+
 
 })(jQuery);
