@@ -1307,7 +1307,9 @@ input, select, textarea {
 			border-color: #ffffff;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
-			max-width: 100%;
+			max-width: 100%
+			margin-top 1rem
+			margin-bottem 1rem;
 		}
 
 			#header .content .inner {
@@ -1319,7 +1321,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 1rem 0rem;
+				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: visible;
 			}
