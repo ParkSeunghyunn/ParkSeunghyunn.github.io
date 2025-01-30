@@ -22,14 +22,15 @@
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
+						<!-- Centered Introduction -->
 						<div class="content">
-							<div class="inner">
-								<h1>This is Alisa Liu</h1>
-								<p>I’m on a journey to explore the world of data, always looking for new ways to turn numbers into meaningful insights and tell the story.
-								Love to uncover patterns, solve problems, and find creative ways to make data-driven decisions that actually make a difference.<br>
-								Outside of data, I love to be behind a camera experimenting with video-taking or trying out new baking recipes—some turn out great, others...
-								well, let’s just say it’s a learning process. Always up for new challenges, creative ideas, and good conversations. Cheers!</p>
-							</div>
+						    <div class="inner">
+						        <h1 id="typing-effect">This is Alisa Liu</h1>
+						        <p class="intro-text">I’m on a journey to explore the world of data, always looking for new ways to turn numbers into meaningful insights and tell the story. 
+						        Love to uncover patterns, solve problems, and find creative ways to make data-driven decisions that actually make a difference.</p>
+						        <p class="intro-text">Outside of data, I love to be behind a camera experimenting with video-taking or trying out new baking recipes—some turn out great, others... 
+						        well, let’s just say it’s a learning process. Always up for new challenges, creative ideas, and good conversations. Cheers!</p>
+						    </div>
 						</div>
 						<nav>
 							<ul>
@@ -91,48 +92,42 @@
 						    </article>
 						
 
-						<!-- Work -->
+						<!-- Work Section with Two-Column Layout and Filter -->
 							<article id="work">
 							    <h2 class="major">Work</h2>
-							
-							    <!-- Category Filter -->
+							    
+							    <!-- Filter Buttons -->
 							    <div class="filter">
-							        <button class="filter-btn" onclick="filterCategory('R')">R</button>
-							        <button class="filter-btn" onclick="filterCategory('SQL')">SQL</button>
-							        <button class="filter-btn" onclick="filterCategory('Machine Learning')">Machine Learning</button>
-							        <button class="filter-btn" onclick="filterCategory('Visualization')">Visualization</button>
+							        <button class="filter-btn" data-category="all">All</button>
+							        <button class="filter-btn" data-category="R">R</button>
+							        <button class="filter-btn" data-category="SQL">SQL</button>
+							        <button class="filter-btn" data-category="Machine Learning">Machine Learning</button>
+							        <button class="filter-btn" data-category="Visualization">Visualization</button>
 							    </div>
-							
-							    <!-- Work Content -->
+							    
+							    <!-- Work Items in Two Columns -->
 							    <div class="work-container">
-							        <!-- First Row of Projects -->
-							        <div class="work-item">
-							            <span class="image main"><img src="images/project1.jpg" alt="Project 1" /></span>
+							        <div class="work-item" data-category="R">
+							            <img src="images/project1.jpg" alt="Project 1" class="project-image" onclick="openProjectModal('Project 1', 'Description 1')">
 							            <p><strong>Project 1 Title</strong></p>
-							            <p>Project description here...</p>
 							        </div>
-							        <div class="work-item">
-							            <span class="image main"><img src="images/project2.jpg" alt="Project 2" /></span>
+							        <div class="work-item" data-category="SQL">
+							            <img src="images/project2.jpg" alt="Project 2" class="project-image" onclick="openProjectModal('Project 2', 'Description 2')">
 							            <p><strong>Project 2 Title</strong></p>
-							            <p>Project description here...</p>
 							        </div>
-							
-							        <!-- Second Row of Projects -->
-							        <div class="work-item">
-							            <span class="image main"><img src="images/project3.jpg" alt="Project 3" /></span>
+							        <div class="work-item" data-category="Machine Learning">
+							            <img src="images/project3.jpg" alt="Project 3" class="project-image" onclick="openProjectModal('Project 3', 'Description 3')">
 							            <p><strong>Project 3 Title</strong></p>
-							            <p>Project description here...</p>
 							        </div>
-							        <div class="work-item">
-							            <span class="image main"><img src="images/project4.jpg" alt="Project 4" /></span>
+							        <div class="work-item" data-category="Visualization">
+							            <img src="images/project4.jpg" alt="Project 4" class="project-image" onclick="openProjectModal('Project 4', 'Description 4')">
 							            <p><strong>Project 4 Title</strong></p>
-							            <p>Project description here...</p>
 							        </div>
-							        
-							        <!-- More Projects Link -->
-							        <div class="more-projects">
-							            <a href="https://github.com/yourusername" target="_blank">More Projects</a>
-							        </div>
+							    </div>
+							    
+							    <!-- More Projects Link -->
+							    <div class="more-projects">
+							        <a href="https://github.com/yourusername" target="_blank">More Projects</a>
 							    </div>
 							</article>
 
